@@ -1,0 +1,100 @@
+{
+  "auckland": {
+    "title": "Auckland",
+    "p_commercial_low": 1250,
+    "p_commercial_high": 5625,
+    "p_residential_low": 3000,
+    "p_residential_high": 4500
+  },
+  "bay_of_plenty": {
+    "title": "Bay of Plenty",
+    "p_commercial_low": 1167,
+    "p_commercial_high": 5250,
+    "p_residential_low": 2800,
+    "p_residential_high": 4200
+  },
+  "canterbury": {
+    "title": "Canterbury",
+    "p_commercial_low": 1100,
+    "p_commercial_high": 4950,
+    "p_residential_low": 2600,
+    "p_residential_high": 4000
+  },
+  "gisborne": {
+    "title": "Gisborne",
+    "p_commercial_low": 1100,
+    "p_commercial_high": 4703,
+    "p_residential_low": 2600,
+    "p_residential_high": 3800
+  },
+  "hawkes_bay": {
+    "title": "Hawke's Bay",
+    "p_commercial_low": 1167,
+    "p_commercial_high": 4950,
+    "p_residential_low": 2800,
+    "p_residential_high": 4000
+  },
+  "manawatu_wanganui": {
+    "title": "Manawatu-Wanganui",
+    "p_commercial_low": 1100,
+    "p_commercial_high": 4703,
+    "p_residential_low": 2600,
+    "p_residential_high": 3800
+  },
+  "marlborough": {
+    "title": "Marlborough",
+    "p_commercial_low": 1050,
+    "p_commercial_high": 4095,
+    "p_residential_low": 2500,
+    "p_residential_high": 3300
+  },
+  "northland": {
+    "title": "Northland",
+    "p_commercial_low": 1167,
+    "p_commercial_high": 4950,
+    "p_residential_low": 2800,
+    "p_residential_high": 4000
+  },
+  "otago": {
+    "title": "Otago",
+    "p_commercial_low": 1407,
+    "p_commercial_high": 6750,
+    "p_residential_low": 3200,
+    "p_residential_high": 4800
+  },
+  "southland": {
+    "title": "Southland",
+    "p_commercial_low": 1100,
+    "p_commercial_high": 4703,
+    "p_residential_low": 2600,
+    "p_residential_high": 3800
+  },
+  "taranaki": {
+    "title": "Taranaki",
+    "p_commercial_low": 1100,
+    "p_commercial_high": 4703,
+    "p_residential_low": 2600,
+    "p_residential_high": 3800
+  },
+  "waikato": {
+    "title": "Waikato",
+    "p_commercial_low": 1167,
+    "p_commercial_high": 5250,
+    "p_residential_low": 2800,
+    "p_residential_high": 4200
+  },
+  "west_coast": {
+    "title": "West Coast",
+    "p_commercial_low": 967,
+    "p_commercial_high": 4350,
+    "p_residential_low": 2500,
+    "p_residential_high": 3300
+  },
+  "generic": {
+    "title": "Generic Region",
+    "p_commercial_low": 1217,
+    "p_commercial_high": 5475,
+    "p_residential_low": 2800,
+    "p_residential_high": 4500
+  }
+}
