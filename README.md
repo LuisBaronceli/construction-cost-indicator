@@ -3,6 +3,8 @@
 An interactive web app for estimating construction costs across New Zealand regions.  
 This project was built on request of **NZCG**, and the deployed version is currently in use at: (will update once the website is live)
 
+Deployed with Netlify.
+
 ## Features
 
 - Calculates cost ranges (low–high) based on square metres and building type (Residential or Commercial).
