@@ -1,6 +1,7 @@
 # Building Cost Calculator
 
-An interactive web app for estimating construction costs across New Zealand regions.
+An interactive web app for estimating construction costs across New Zealand regions.  
+This project was built on request of **NZCG**, and the deployed version is currently in use at: (will update once the website is live)
 
 ## Features
 
@@ -28,9 +29,6 @@ An interactive web app for estimating construction costs across New Zealand regi
 └─ assets/
 └─ bciPricing.json # Region pricing data
 
-bash
-Copy code
-
 ## Getting Started
 
 ### Prerequisites
@@ -42,31 +40,37 @@ Copy code
 
 # Clone the repository
 
+```bash
 git clone https://github.com/USERNAME/REPO-NAME.git
 cd REPO-NAME
+```
 
 # Install dependencies
 
+```bash
 npm install
-
 # or yarn install
-
 # or pnpm install
+```
 
 Running locally
 
-Copy code
+```bash
 npm run dev
-Open http://localhost:3000 in your browser.
+Open http://localhost:5173 in your browser.
+```
 
 Building for production
 
+```bash
 Copy code
 npm run build
 npm run preview
+```
+
 Customisation
 Update pricing data in public/assets/bciPricing.json.
 
 Add new regions or adjust rates without changing code.
 
-Extend the matrix in App.tsx if you add new building types.
+Extend the matrix in App.tsx if you add new building types
