@@ -29,7 +29,7 @@ const PRICE_MATRIX: Record<'commercial' | 'residential', { low: PriceKeys; high:
 export default function App() {
   const [pricing, setPricing] = useState<PricingJson | null>(null);
   const [loading, setLoading] = useState(true);
-  const [locationKey, setLocationKey] = useState<string>(''); // stays empty until user picks
+  const [locationKey, setLocationKey] = useState<string>('');
   const [squareMetres, setSquareMetres] = useState<string>('');
   const [isCommercial, setIsCommercial] = useState<boolean>(false);
   const [error, setError] = useState<string | null>(null);
@@ -95,8 +95,8 @@ export default function App() {
     }).format(amount);
 
   return (
-    <div className="min-h-screen bg-white flex items-center justify-center p-4">
-      <Card className="w-full max-w-md shadow-xl border-0" style={{ backgroundColor: '#fcfbfd' }}>
+    <div className="min-h-screen bg-white flex justify-center p-4">
+      <Card className="w-full max-w-md shadow-around border-0 bg-white mt-0">
         <CardHeader className="text-center pb-6">
           <div className="mx-auto mb-4 w-16 h-16 flex items-center justify-center">
             <img
