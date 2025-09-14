@@ -95,7 +95,7 @@ export default function App() {
     }).format(amount);
 
   return (
-    <div className="min-h-screen bg-white flex justify-center p-4">
+    <div className="min-h-screen bg-white flex items-start justify-center p-4">
       <Card className="w-full max-w-md shadow-around border-0 bg-white mt-0">
         <CardHeader className="text-center pb-6">
           <div className="mx-auto mb-4 w-16 h-16 flex items-center justify-center">
@@ -107,7 +107,7 @@ export default function App() {
           </div>
 
           <CardTitle className="text-2xl">Construction Cost Indicator</CardTitle>
-          <p className="text-muted-foreground">Estimate your construction cost range</p>
+          <p className="text-muted-foreground">Estimate your construction cost range.</p>
         </CardHeader>
 
         <CardContent className="space-y-6">
