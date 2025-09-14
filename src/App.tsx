@@ -64,30 +64,27 @@ export default function App() {
       .sort(([, a], [, b]) => a.title.localeCompare(b.title));
   }, [pricing]);
 
-  const getRegionData = (): RegionPricing | null => {
+  // Current region object (recomputes when locationKey changes)
+  const regionForDisplay = useMemo<RegionPricing | null>(() => {
     if (!pricing || !locationKey) return null;
     return pricing[locationKey] ?? null;
-  };
+  }, [pricing, locationKey]);
 
-  const calculatePriceRange = () => {
+  // Calculate price range whenever inputs change (region, sqm, type)
+  const totalRange = useMemo(() => {
     const sqm = parseFloat(squareMetres);
-    if (!pricing || !locationKey || !Number.isFinite(sqm) || sqm <= 0) return null;
-
-    const region = getRegionData();
-    if (!region) return null;
+    if (!regionForDisplay || !Number.isFinite(sqm) || sqm <= 0) return null;
 
     const type = isCommercial ? 'commercial' : 'residential';
     const { low, high } = PRICE_MATRIX[type];
 
     return {
-      rateLow: region[low],
-      rateHigh: region[high],
-      totalLow: sqm * region[low],
-      totalHigh: sqm * region[high],
+      rateLow: regionForDisplay[low],
+      rateHigh: regionForDisplay[high],
+      totalLow: sqm * regionForDisplay[low],
+      totalHigh: sqm * regionForDisplay[high],
     };
-  };
-
-  const totalRange = calculatePriceRange();
+  }, [regionForDisplay, squareMetres, isCommercial]);
 
   const formatCurrency = (amount: number) =>
     new Intl.NumberFormat('en-NZ', {
@@ -97,11 +94,9 @@ export default function App() {
       maximumFractionDigits: 0,
     }).format(amount);
 
-  const regionForDisplay = getRegionData();
-
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100 flex items-center justify-center p-4">
-      <Card className="w-full max-w-md shadow-xl border-0 bg-white/80 backdrop-blur-sm">
+    <div className="min-h-screen bg-white flex items-center justify-center p-4">
+      <Card className="w-full max-w-md shadow-xl border-0" style={{ backgroundColor: '#fcfbfd' }}>
         <CardHeader className="text-center pb-6">
           <div className="mx-auto mb-4 w-16 h-16 flex items-center justify-center">
             <img
