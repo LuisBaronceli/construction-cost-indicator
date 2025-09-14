@@ -48,6 +48,13 @@
     "p_residential_low": 2500,
     "p_residential_high": 3300
   },
+  "nelson": {
+    "title": "Nelson",
+    "p_commercial_low": 1120,
+    "p_commercial_high": 4500,
+    "p_residential_low": 2700,
+    "p_residential_high": 3900
+  },
   "northland": {
     "title": "Northland",
     "p_commercial_low": 1167,
@@ -76,12 +83,26 @@
     "p_residential_low": 2600,
     "p_residential_high": 3800
   },
+  "tasman": {
+    "title": "Tasman",
+    "p_commercial_low": 1120,
+    "p_commercial_high": 4500,
+    "p_residential_low": 2700,
+    "p_residential_high": 3900
+  },
   "waikato": {
     "title": "Waikato",
     "p_commercial_low": 1167,
     "p_commercial_high": 5250,
     "p_residential_low": 2800,
     "p_residential_high": 4200
+  },
+  "wellington": {
+    "title": "Wellington",
+    "p_commercial_low": 1250,
+    "p_commercial_high": 5625,
+    "p_residential_low": 3000,
+    "p_residential_high": 4400
   },
   "west_coast": {
     "title": "West Coast",
@@ -91,7 +112,7 @@
     "p_residential_high": 3300
   },
   "generic": {
-    "title": "Generic Region",
+    "title": "National Average",
     "p_commercial_low": 1217,
     "p_commercial_high": 5475,
     "p_residential_low": 2800,
